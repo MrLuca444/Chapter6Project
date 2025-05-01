@@ -18,6 +18,7 @@ do {
   std::cin >> choice;
   if (choice == 'n' || choice == 'N') {
     finishes = true;
+    std::cout << "Goodbye!" << std::endl;
   }
 } while (finishes == false);
   
