@@ -1,38 +1,24 @@
-#include <iostream>
-using namespace std;
+#include <iostream> 
 
-// Function prototypes
-double findLowest(double a, double b, double c, double d, double e);
-double findHighest(double a, double b, double c, double d, double e);
-
-int main() {
-    double s1, s2, s3, s4, s5;
-    cout << "Enter the five scores separated by spaces:" << endl;
-    cin >> s1 >> s2 >> s3 >> s4 >> s5;
-
-    double lowest = findLowest(s1, s2, s3, s4, s5);
-    double highest = findHighest(s1, s2, s3, s4, s5);
-    double average = (s1 + s2 + s3 + s4 + s5 - lowest - highest) / 3;
-
-    cout << "Your score is " << average << endl;
-
-    return 0;
-}
-
-double findLowest(double a, double b, double c, double d, double e) {
-    double min = a;
-    if (b < min) min = b;
-    if (c < min) min = c;
-    if (d < min) min = d;
-    if (e < min) min = e;
-    return min;
-}
-
-double findHighest(double a, double b, double c, double d, double e) {
-    double max = a;
-    if (b > max) max = b;
-    if (c > max) max = c;
-    if (d > max) max = d;
-    if (e > max) max = e;
-    return max;
+int main(){
+  int rooms;
+  double footage, perg;
+std::cout <<  "how many rooms would you like to paint?" << std::endl;
+ std:: cin >> rooms;
+  std::cout << "what is the combined area of the rooms in square feet?" << std::endl;
+  std::cin >> footage;
+  std::cout<< "how much are you willing to spend on paint per gallon?" << std::endl;
+  std::cin >> perg;
+  std::cout << "BREAKDOWN" << std::endl;
+  double paint = footage/110;
+  std::cout << "Gallons of paint required " << paint << std::endl;
+  double labor = footage/110 * 8;
+  std::cout << "Labor hours required " << labor << std::endl;
+  double paintcost = paint * perg;
+  std::cout << "Paint cost " << paintcost << std::endl;
+  double laborcost = labor * 25;
+  std::cout << "Labor cost " << laborcost << std::endl;
+  double totalcost = paintcost + laborcost;
+  std::cout << "Total cost " << totalcost << std::endl;
+  return 0;
 }
