@@ -1,22 +1,16 @@
 #include <iostream>
-
-int main() { 
-  
-int length , width;
-  bool finishes = false;
-  char answer;
-do{
-  std::cout << "Enter the length of the rectangle: ";
-    std::cin >> length;
-    std::cout << "Enter the width of the rectangle: ";
-    std::cin >> width;
-  std::cout << "The area of the rectangle is: " << length * width << std::endl;
-  std::cout << "The perimeter of the rectangle is: " << 2 * (length + width) << std::endl;
-  std::cout << "Do you want to calculate another rectangle? (y/n): ";
-  if (answer == y||Y){
-    finishes = true;
-  }
-} while (finishes == false);
-  
+int main() {
+  int north
+  int south
+  int east
+  int west
+  sdt::cout << "How many accidents were in North Tallahassee last year?" << std::endl;
+  std::cin >> north;
+  std::cout << "How many accidents were in South Tallahassee last year?" << std::endl;
+  std::cin >> south;
+  std::cout << "How many accidents were in East Tallahassee last year?" << std::endl;
+  std::cin >> east;  
+  std::cout << "How many accidents were in West Tallahassee last year?" << std::endl;
+  std::cin >> west;
   
 }
