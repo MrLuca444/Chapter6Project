@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Function prototypes
 double findLowest(double a, double b, double c, double d, double e);
 double findHighest(double a, double b, double c, double d, double e);
 
