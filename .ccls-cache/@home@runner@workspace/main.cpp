@@ -1,14 +1,25 @@
 #include <iostream>
 int main() {
   int north, south, east, west;
-  std::cout << "How many accidents were in North Tallahassee last year?" << std::endl;
-  std::cin >> north;
-  std::cout << "How many accidents were in South Tallahassee last year?" << std::endl;
-  std::cin >> south;
-  std::cout << "How many accidents were in East Tallahassee last year?" << std::endl;
-  std::cin >> east;  
-  std::cout << "How many accidents were in West Tallahassee last year?" << std::endl;
-  std::cin >> west;
+  do {
+    std::cout << "How many accidents were in North Tallahassee last year? (must be >= 0): ";
+    std::cin >> north;
+  } while (north < 0);
+
+  do {
+    std::cout << "How many accidents were in South Tallahassee last year? (must be >= 0): ";
+    std::cin >> south;
+  } while (south < 0);
+
+  do {
+    std::cout << "How many accidents were in East Tallahassee last year? (must be >= 0): ";
+    std::cin >> east;
+  } while (east < 0);
+
+  do {
+    std::cout << "How many accidents were in West Tallahassee last year? (must be >= 0): ";
+    std::cin >> west;
+  } while (west < 0);
   
   int lowest = north;
   if (south < lowest) lowest = south;
